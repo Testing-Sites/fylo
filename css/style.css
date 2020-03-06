@@ -18,16 +18,20 @@
 
 body {
   font: 16px open sans, sans-serif;
-  padding: 8px;
   color: var(--Light-Gray);
   height: 100vh;
+}
+
+main {
+  padding: 8px;
 }
 
 a {
   color: var(--Light-Gray);
 }
 
-h1 {
+h1,
+h3 {
   color: var(--Very-Dark-Blue);
   font-family: raleway, sans-serif;
 }
@@ -38,7 +42,8 @@ h1 {
 
 .main-header,
 .nav,
-.nav-links {
+.nav-links,
+.article-body {
   display: flex;
   align-items: center;
 }
@@ -83,7 +88,8 @@ h1 {
 
 /* main text for article */
 
-.article-intro {
+.article-intro-text,
+.article-body-text {
   margin-top: 24px;
 }
 
@@ -111,10 +117,21 @@ h1 {
   font-size: 14px;
 }
 
-/* article for body  */
+/* -----article for body-----  */
+.article-body {
+  padding: 0 8px;
+  background-color: var(--Light-Grayish-Blue);
+  flex-direction: column;
+}
 
 .background-mobile {
   height: auto;
   width: 100%;
   margin-top: 34px;
+  margin-bottom: -8px;
+}
+
+.illustration-2 {
+  background-color: var(--Light-Grayish-Blue);
+  margin: auto;
 }
