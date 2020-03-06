@@ -9,7 +9,7 @@
 
  /* neutral */
  --Light-Grayish-Blue: hsl(240, 75%, 98%);
- --Light-Gray: hsl(0, 0%, 50%);
+ --Light-Gray: hsl(0, 0%, 30%);
 }
 
 * {
@@ -17,13 +17,19 @@
 }
 
 body {
-  font: 16px open sans;
+  font: 16px open sans, sans-serif;
   padding: 8px;
   color: var(--Light-Gray);
+  height: 100vh;
 }
 
 a {
   color: var(--Light-Gray);
+}
+
+h1 {
+  color: var(--Very-Dark-Blue);
+  font-family: raleway, sans-serif;
 }
 
 /* ----- heading and navigation ------ */
@@ -60,13 +66,55 @@ a {
 
 /* flex */
 
-.article {
+.article-intro {
   display: flex;
+  flex-direction: column;
+
   margin-top: 24px;
+  text-align: center;
 }
 
 /* main image */
 
 .illustation-1 {
-  max-width: 100%
+  max-width: 100%;
+  text-align: center;
+}
+
+/* main text for article */
+
+.article-intro {
+  margin-top: 24px;
+}
+
+/* email input  */
+.email,
+.btn-email {
+  height: 44px;
+  border-radius: 4px;
+  margin-top: 16px;
+}
+
+.email {
+  height: 44px;
+
+  padding: 0 16px;
+
+  border: 1px solid var(--Very-Dark-Blue);
+}
+
+.btn-email {
+  background-color: var(--Bright-Blue);
+  border-color: var(--Bright-Blue);
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+/* article for body  */
+
+.background-mobile {
+  height: auto;
+  width: 100%;
+  margin-top: 34px;
 }
