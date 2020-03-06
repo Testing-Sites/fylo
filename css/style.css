@@ -1,0 +1,59 @@
+:root {
+  /* primary */
+ --Very-Dark-Blue: hsl(243, 87%, 12%);
+ --Desaturated-Blue: hsl(238, 22%, 44%);
+
+ /* accent */
+ --Bright-Blue: hsl(224, 93%, 58%);
+ --Moderate-Cyan: hsl(170, 45%, 43%);
+
+ /* neutral */
+ --Light-Grayish-Blue: hsl(240, 75%, 98%);
+ --Light-Gray: hsl(0, 0%, 50%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font: 16px open sans;
+  padding: 8px;
+  color: var(--Light-Gray);
+}
+
+a {
+  color: var(--Light-Gray);
+}
+
+/* heading and navigation */
+
+/* flex */
+
+.main-header,
+.nav,
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+
+/* design */
+
+.logo {
+  height: 32px;
+  margin-right: auto;
+}
+
+.nav-links a {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.nav-links li {
+  text-align: center;
+  padding-left: 8px;
+}
+
+
+/* main image */
